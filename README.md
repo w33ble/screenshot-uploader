@@ -22,7 +22,11 @@ Once you have a key, place it in to a file named *screenshot-api-key* in the sam
 
 > echo "APIKEYHERE" > screenshot-api-key
 
-Then simply run *./screenshot-upload.sh -a* to upload a screenshot of your entire screen, or *./screenshot-upload.sh -s* to choose a selection of the screen to upload
+Then run
+
+> ./screenshot-upload.sh
+
+And you'll get some usage instructions. You must choose -a (whole screen) or -s (selection) and optionally -n (don't upload, save to desktop instead)
 
 When the upload is complete, the resulting URL will be placed in your clipboard, ready to paste anywhere you need it.
 

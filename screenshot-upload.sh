@@ -15,7 +15,7 @@ case "$1" in
 		OPTIONS="-q ${QUALITY}"
 		;;
 	*)
-		echo "Usage: ${0} [-a/--all|-s/--selection] [-n/--noupload]"
+		echo "Usage: ${0} <-a/--all|-s/--selection> [-n/--noupload]"
 		exit 1
 esac
 
