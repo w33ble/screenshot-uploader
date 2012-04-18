@@ -18,11 +18,11 @@ Usage
 =====
 In order to use this script, you need an [API key](http://api.imgur.com/) from Imgur
 
-Once you have a key, place it in to a file named *api_key* in the same directory as upload.sh. The following would work:
+Once you have a key, place it in to a file named *screenshot-api-key* in the same directory as screenshot-upload.sh. The following would work:
 
-> echo "APIKEYHERE" > api_key
+> echo "APIKEYHERE" > screenshot-api-key
 
-Then simply run *./upload.sh* to upload a screenshot of your entire screen, or *./upload.sh -s* to choose a selection of the screen to upload
+Then simply run *./screenshot-upload.sh -a* to upload a screenshot of your entire screen, or *./screenshot-upload.sh -s* to choose a selection of the screen to upload
 
 When the upload is complete, the resulting URL will be placed in your clipboard, ready to paste anywhere you need it.
 

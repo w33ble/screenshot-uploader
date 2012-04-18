@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-API_KEY=`head -n1 ${DIR}/api_key`
+API_KEY=`head -n1 ${DIR}/screenshot-api-key`
 
 TYPE=jpg #png, jpg, gif, etc. | if you change this, be sure to change the quality
 QUALITY=90 #image quality
@@ -10,9 +10,12 @@ case "$1" in
 	-s|--selection)
 		OPTIONS="-s -b -q ${QUALITY}"
 		;;
-	*)
+	-a)
 		OPTIONS="-q ${QUALITY}"
 		;;
+	*)
+		echo "Usage: ${0} [-a|-s]"
+		exit 1
 esac
 
 scrot ${OPTIONS} ${FILE}
